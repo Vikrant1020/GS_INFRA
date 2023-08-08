@@ -28,3 +28,8 @@ variable "container_name" {
   default = "infra"
 }
 
+
+variable "devops_project" {
+  type = string
+  default = "dev2"
+}

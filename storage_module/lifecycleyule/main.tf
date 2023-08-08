@@ -2,7 +2,7 @@ resource "azurerm_storage_management_policy" "example" {
   storage_account_id = var.storage_account_id #azurerm_storage_account.storage.id
 
   rule {
-    name    = "dev_tier_rule"
+    name    = var.lifecyle_rule_name
     enabled = var.rule_enable
     filters {
       prefix_match = [var.container_name]

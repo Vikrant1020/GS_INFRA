@@ -1,4 +1,4 @@
-resource "azurerm_private_endpoint" "example" {
+resource "azurerm_private_endpoint" "ep" {
   name                = var.name
   location            = var.rg_location
   resource_group_name = var.rg_name
@@ -13,7 +13,4 @@ resource "azurerm_private_endpoint" "example" {
   tags = {
     "env": var.env
   }
-#   sku {
-#     name = "Standard"
-#   }
 }

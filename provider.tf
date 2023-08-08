@@ -21,18 +21,5 @@ provider "azuredevops" {
   personal_access_token= data.azurerm_key_vault_secret.pipeline_token.value
 }
 
-data "azurerm_key_vault" "root" {
-  name                = "root"
-  resource_group_name = "vikrant"
-}
 
-data "azurerm_key_vault_secret" "github_token" {
-  name         = "github-token"
-  key_vault_id = data.azurerm_key_vault.root.id
-}
-
-data "azurerm_key_vault_secret" "pipeline_token" {
-  name         = "pipeline-token"
-  key_vault_id = data.azurerm_key_vault.root.id
-}
-# uxmrvowppsdtumde6kywl2bstjbaz2vc5mbwtepkdr7jnc7p7omq
+# # mm3e54edztxtbkyal474llfariihduxzlaaj6r3q3eyljbwd4tua

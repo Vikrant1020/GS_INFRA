@@ -17,3 +17,7 @@ variable "time_to_move_to_archive" {
 variable "time_to_move_to_cool" {
   type = number
 }
+
+variable "lifecyle_rule_name" {
+  type = string
+}
