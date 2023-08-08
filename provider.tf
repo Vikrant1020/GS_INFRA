@@ -21,5 +21,3 @@ provider "azuredevops" {
   personal_access_token= data.azurerm_key_vault_secret.pipeline_token.value
 }
 
-
-# # mm3e54edztxtbkyal474llfariihduxzlaaj6r3q3eyljbwd4tua
