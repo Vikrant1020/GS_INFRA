@@ -1,25 +1,5 @@
-variable "rg_location" {
+variable "DNS_name" {
   type = string
-}
-
-variable "rg_name" {
-  type = string
-}
-
-variable "subnet_id" {
-  type = string
-}
-
-variable "link_name" {
-  type = string
-}
-
-variable "pe_resource_id" {
-  type = string
-}
-
-variable "subresource_name" {
-  type = list(string)
 }
 
 variable "env_type" {
@@ -42,10 +22,6 @@ variable "env" {
   }
 }
 
-variable "DNS_id" {
-  type = string
-}
-
-variable "DNS_zone_name" {
+variable "rg_name" {
   type = string
 }

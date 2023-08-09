@@ -13,13 +13,14 @@ terraform {
 }
 
 resource "azurerm_static_site" "dev" {
-  name                = var.web_app_name
+  name                = "${var.env}-static-site"
   resource_group_name = var.resource_group_name
   location            = "east us 2"
   sku_tier  = "Standard"
   sku_size = "Standard"
 
   tags = {
-    "env": var.env
+    env = var.env
+    env_type = var.env_type
   }
 }

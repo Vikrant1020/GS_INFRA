@@ -114,8 +114,8 @@ resource "azurerm_application_gateway" "network" {
     name                  = local.http_setting_name
     cookie_based_affinity = "Disabled"
     path                  = "/"
-    port                  = 80
-    protocol              = "Http"
+    port                  = 443
+    protocol              = "Https"
     request_timeout       = 60
   }
 

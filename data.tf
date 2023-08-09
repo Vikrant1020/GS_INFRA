@@ -1,4 +1,3 @@
-
 data "azurerm_key_vault" "root" {
   name                = "root"
   resource_group_name = "vikrant"
